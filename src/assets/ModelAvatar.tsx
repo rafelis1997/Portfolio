@@ -163,5 +163,3 @@ export function ModelAvatar({ ...props }: JSX.IntrinsicElements['group']) {
     </group>
   )
 }
-
-useGLTF.preload('/ScareWaveAnim.glb')

@@ -18,7 +18,7 @@ export function Hero() {
       <HeroInner
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delayChildren: 1 }}
+        transition={{ duration: 1, delayChildren: 1, delay: 1 }}
       >
         <HeroContent>
           <DescriptionContainer>
@@ -41,6 +41,7 @@ export function Hero() {
               transition={{
                 type: 'spring',
                 stiffness: 80,
+                delay: 1.2,
               }}
             >
               <img src="me.png" alt=""></img>
@@ -51,7 +52,7 @@ export function Hero() {
                 x: 10,
                 transition: { ease: 'easeOut' },
               }}
-              animate={{ opacity: 1, transition: { duration: 1 } }}
+              animate={{ opacity: 1, transition: { duration: 1, delay: 1.2 } }}
             />
           </ImageContainer>
         </HeroContent>
