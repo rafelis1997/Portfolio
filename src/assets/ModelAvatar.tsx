@@ -52,7 +52,7 @@ type GLTFResult = GLTF & {
 
 // eslint-disable-next-line no-undef
 export function ModelAvatar({ ...props }: JSX.IntrinsicElements['group']) {
-  const group = useRef()
+  const group = useRef<THREE.Group>(null)
   const { nodes, materials, animations } = useGLTF(
     '/ScareWaveAnim.glb',
   ) as GLTFResult
