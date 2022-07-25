@@ -75,7 +75,7 @@ export function ModelAvatar({ ...props }: JSX.IntrinsicElements['group']) {
       {...props}
       dispose={null}
       onPointerOver={(event) => setName('ScareAnim')}
-      onPointerOut={(event) => setName('waving')}
+      onPointerOut={(event) => setName('WavingAnim')}
       scale={3}
     >
       <group name="Scene">
