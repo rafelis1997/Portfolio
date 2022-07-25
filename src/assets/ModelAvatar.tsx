@@ -7,10 +7,10 @@ import React, { useEffect, useRef, useState } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 
-type ActionName = 'WavingAnim' | 'ScareAnim'
+const ACTION_NAME = { WavingAnim: 'WavingAnim', ScareAnim: 'WavingAnim' }
 
-interface GLTFActions extends THREE.AnimationClip {
-  name: ActionName
+interface GLTFAction extends THREE.AnimationClip {
+  name: keyof typeof ACTION_NAME
 }
 
 type GLTFResult = GLTF & {
@@ -47,7 +47,7 @@ type GLTFResult = GLTF & {
     Wolf3D_Outfit_Top: THREE.MeshStandardMaterial
     Wolf3D_Body: THREE.MeshStandardMaterial
   }
-  animations: GLTFActions[]
+  animations: GLTFAction[]
 }
 
 // eslint-disable-next-line no-undef
@@ -60,8 +60,13 @@ export function ModelAvatar({ ...props }: JSX.IntrinsicElements['group']) {
   const [name, setName] = useState('WavingAnim')
 
   useEffect(() => {
-    if (actions) actions[name].reset().fadeIn(0.3).play()
-    return () => actions[name].fadeOut(0.2)
+    const anim = actions[name as keyof typeof actions]
+    if (anim !== null) {
+      anim.reset().fadeIn(0.3).play()
+      return () => {
+        if (anim !== null) anim.fadeOut(0.2)
+      }
+    }
   }, [name, actions])
 
   return (
@@ -70,7 +75,7 @@ export function ModelAvatar({ ...props }: JSX.IntrinsicElements['group']) {
       {...props}
       dispose={null}
       onPointerOver={(event) => setName('ScareAnim')}
-      onPointerOut={(event) => setName('WavingAnim')}
+      onPointerOut={(event) => setName('waving')}
       scale={3}
     >
       <group name="Scene">
