@@ -11,6 +11,7 @@ import {
   CommentCardContent,
   CommentImg,
   ProjectCardImage,
+  CommentCardInner,
 } from './style'
 
 interface PortfolioCardProps {
@@ -47,11 +48,13 @@ export function PortfolioCard({ data }: PortfolioCardProps) {
 
       {data.comment && (
         <CommentCard isInverse={!data.isInverse}>
-          <CommentCardContent isInverse={!data.isInverse}>
-            <Quotes size={96} />
-            <span>{data.comment.text}</span>
-          </CommentCardContent>
-          <CommentImg url={data.comment.commentImgUrl} />
+          <CommentCardInner>
+            <CommentCardContent isInverse={!data.isInverse}>
+              <Quotes size={96} />
+              <span>{data.comment.text}</span>
+            </CommentCardContent>
+            <CommentImg url={data.comment.commentImgUrl} />
+          </CommentCardInner>
         </CommentCard>
       )}
     </PortfolioCardContainer>

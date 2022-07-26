@@ -124,19 +124,25 @@ export const PortfolioCardImageBackground = styled.div<InverseProps>`
 `
 
 export const CommentCard = styled.div<InverseProps>`
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16rem;
-
   padding: 8rem 2rem;
 
   background: ${(props) => (!props.isInverse ? props.theme['gray-900'] : '')};
 
   color: ${(props) =>
     props.isInverse ? props.theme['gray-900'] : props.theme['text-gray']};
+`
+
+export const CommentCardInner = styled.div`
+  width: 80%;
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3rem 0;
+
+  border-top: 3px solid ${(props) => props.theme['gray-900']};
+  border-bottom: 3px solid ${(props) => props.theme['gray-900']};
 `
 
 export const CommentCardContent = styled.div<InverseProps>`
