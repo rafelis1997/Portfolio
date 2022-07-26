@@ -13,6 +13,10 @@ export const HeroContainer = styled.section`
   justify-content: center;
 
   position: relative;
+
+  @media screen and (max-width: 1024px) {
+    height: max-content;
+  }
 `
 
 export const HeroInner = styled(motion.div)`
@@ -24,6 +28,7 @@ export const HeroInner = styled(motion.div)`
   justify-content: space-between;
 
   gap: 2rem;
+  margin: 2rem;
 `
 
 export const HeroContent = styled.div`
@@ -32,6 +37,12 @@ export const HeroContent = styled.div`
   width: 100%;
   height: 100%;
   align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 4rem;
+  }
 `
 
 export const DescriptionContainer = styled.div`
@@ -96,6 +107,7 @@ export const HeroButtonContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 4;
 
   a {
     font-family: 'Poppins', sans-serif;

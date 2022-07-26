@@ -16,8 +16,8 @@ export const HeaderInner = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 90rem;
-  margin: 0 auto;
+  max-width: 92rem;
+  padding: 0 2rem;
 
   height: 6rem;
   width: 100%;

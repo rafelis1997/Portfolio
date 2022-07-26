@@ -31,10 +31,9 @@ export function AboutMe() {
         <AboutMeModelContainer>
           <Canvas
             camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 1.5, 4] }}
-            shadows={true}
           >
-            <ambientLight castShadow={true} />
-            <ModelAvatar position={[0, -3, 0]} receiveShadow={true} />
+            <ambientLight />
+            <ModelAvatar position={[0, -3, 0]} />
           </Canvas>
         </AboutMeModelContainer>
       </AboutMeInner>

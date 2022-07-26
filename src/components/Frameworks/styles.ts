@@ -7,7 +7,7 @@ export const FrameworksContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 4.5rem 0;
+  padding: 4.5rem 2rem;
   gap: 2rem;
 
   h1 {
@@ -31,6 +31,7 @@ export const FrameworksContent = styled.div`
 export const LabelsContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 0.5rem;
 
   border-radius: 24px;
@@ -49,6 +50,9 @@ export const Label = styled.a<LabelsProps>`
   height: 100%;
   font-weight: 700;
   padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 12px;
 

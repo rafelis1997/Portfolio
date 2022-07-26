@@ -22,6 +22,15 @@ export const AboutMeInner = styled.div`
   justify-content: center;
   align-items: center;
   gap: 20rem;
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 0 3rem;
+  }
 `
 
 export const AboutMeDescription = styled.div`

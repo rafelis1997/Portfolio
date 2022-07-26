@@ -25,6 +25,11 @@ export const ProjectCard = styled.div<InverseProps>`
 
   color: ${(props) =>
     !props.isInverse ? props.theme['gray-900'] : props.theme['text-gray']};
+
+  @media screen and (max-width: 1024px) {
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
 `
 
 export const ProjectCardContent = styled.div`
@@ -78,6 +83,10 @@ export const ButtonContainer = styled.div<InverseProps>`
           ? props.theme['yellow-hover']
           : props.theme['gray-700']};
     }
+  }
+
+  @media screen and (max-width: 1024px) {
+    gap: 3rem;
   }
 `
 interface CommentImgProps {
@@ -143,6 +152,12 @@ export const CommentCardInner = styled.div`
 
   border-top: 3px solid ${(props) => props.theme['gray-900']};
   border-bottom: 3px solid ${(props) => props.theme['gray-900']};
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    gap: 3rem;
+  }
 `
 
 export const CommentCardContent = styled.div<InverseProps>`

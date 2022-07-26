@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const PortfolioContainer = styled.section`
   display: flex;
   width: 100%;
-  padding: 4.5rem;
+  padding: 4.5rem 0;
 
   color: ${(props) => props.theme['gray-900']};
 `
