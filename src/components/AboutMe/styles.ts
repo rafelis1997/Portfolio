@@ -23,12 +23,12 @@ export const AboutMeInner = styled.div`
   align-items: center;
   gap: 20rem;
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     flex-direction: column-reverse;
     gap: 3rem;
   }
 
-  @media screen and (max-width: 600px) {
+  @media (max-width: 600px) {
     padding: 0 3rem;
   }
 `
