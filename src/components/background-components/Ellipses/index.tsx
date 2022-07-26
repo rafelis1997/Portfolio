@@ -7,13 +7,13 @@ export function Ellipses() {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.2 }}
-        transition={{ type: 'spring', stiffness: 150, delay: 2 }}
+        transition={{ type: 'spring', stiffness: 150 }}
       />
       <EllipseTwoContainer
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.2 }}
-        transition={{ type: 'spring', stiffness: 150, delay: 2 }}
+        transition={{ type: 'spring', stiffness: 150 }}
       />
     </>
   )
