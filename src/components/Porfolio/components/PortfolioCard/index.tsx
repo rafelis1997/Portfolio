@@ -46,8 +46,8 @@ export function PortfolioCard({ data }: PortfolioCardProps) {
       </ProjectCard>
 
       {data.comment && (
-        <CommentCard isInverse={data.isInverse}>
-          <CommentCardContent isInverse={data.isInverse}>
+        <CommentCard isInverse={!data.isInverse}>
+          <CommentCardContent isInverse={!data.isInverse}>
             <Quotes size={96} />
             <span>{data.comment.text}</span>
           </CommentCardContent>

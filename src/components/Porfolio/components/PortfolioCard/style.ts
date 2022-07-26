@@ -131,7 +131,7 @@ export const CommentCard = styled.div<InverseProps>`
   align-items: center;
   gap: 16rem;
 
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
 
   background: ${(props) => (!props.isInverse ? props.theme['gray-900'] : '')};
 

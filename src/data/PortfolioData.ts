@@ -52,7 +52,7 @@ export const portfolioData = {
         description:
           'AR Experience is my demo Web App to showcase my work as an webAR developer, it’s in continuos development and will show what is possible with webAR today',
         imgUrl: 'arDemo.png',
-        isInverse: false,
+        isInverse: true,
         primaryButton: {
           title: 'Go to Website',
           goTo: 'https://arjs-react-test.vercel.app',
