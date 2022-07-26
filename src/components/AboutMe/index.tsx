@@ -30,10 +30,10 @@ export function AboutMe() {
         </AboutMeDescription>
         <AboutMeModelContainer>
           <Canvas
-            camera={{ fov: 75, near: 0.1, far: 1000, position: [0, 1.5, 4] }}
+            camera={{ fov: 40, near: 0.1, far: 1000, position: [0, 1.5, 8] }}
           >
             <ambientLight />
-            <ModelAvatar position={[0, -3, 0]} />
+            <ModelAvatar position={[0, -2.8, 0]} />
           </Canvas>
         </AboutMeModelContainer>
       </AboutMeInner>
