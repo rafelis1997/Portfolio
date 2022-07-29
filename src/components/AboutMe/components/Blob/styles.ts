@@ -1,46 +1,40 @@
 import styled, { keyframes } from 'styled-components'
 
 const anim = keyframes`
-   from {
-     border-radius: 24% 76% 35% 65% / 27% 36% 65% 73%;
-     transform: translate(-200px, 0px) rotate(0deg);
-   }
-   to {
-     border-radius: 87% 53% 28% 86% / 40% 65% 46% 57%;
-     transform: translate(-8px, -40px) rotate(-90deg);;
-   }
- `
+
+  0% {transform: translate(-200px, 0px);}
+  50% {transform: translate(100px, -100px);}
+  100% {transform: translate(-20px, 120px);}
+
+`
 
 const anim2 = keyframes`
-   from {
-     
-     border-radius: 87% 53% 28% 86% / 40% 65% 46% 57%;
-     transform: translate(-100px, -200px) rotate(0deg);
-   }
-   to {
-     border-radius: 24% 76% 35% 65% / 27% 36% 65% 73%;
-     transform: translate(-25px, -100px) rotate(-90deg);;
-   }
- `
+
+  0% {transform: translate(0px, 0px);}
+  50% {transform: translate(100px, -200px);}
+  100% {transform: translate(-200px, -80px);}
+
+`
 
 export const BlobContainer = styled.div`
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   bottom: 0;
   right: 0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 
-  background: ${(props) => props.theme.yellow};
+  /* background: ${(props) => props.theme.yellow}; */
 
   position: absolute;
 
-  animation: ${anim} 10s infinite alternate;
+  animation: ${anim} 25s infinite alternate;
 `
 
 export const BlobContainer2 = styled(BlobContainer)`
   width: 120px;
   height: 120px;
-  background: ${(props) => props.theme['gray-900']};
-  animation: ${anim2} 10s infinite alternate;
+  animation: ${anim2} 30s infinite alternate;
   mix-blend-mode: color-dodge;
 `
