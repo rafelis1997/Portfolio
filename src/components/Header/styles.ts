@@ -85,6 +85,8 @@ export const NavMenu = styled.div<NavProps>`
       justify-content: flex-start;
       align-self: flex-start;
 
+      color: ${(props) => props.theme['gray-900']};
+
       transition: all 0.2s ease-in-out;
 
       .menuItems {
@@ -95,7 +97,9 @@ export const NavMenu = styled.div<NavProps>`
         text-align: center;
         gap: 1rem;
 
-        color: ${(props) => props.theme['gray-900']};
+        a {
+          color: ${(props) => props.theme['gray-900']};
+        }
 
         a:visited {
           text-decoration: none;
