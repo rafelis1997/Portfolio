@@ -1,7 +1,6 @@
 import styled, { keyframes } from 'styled-components'
 
-
- const anim = keyframes`
+const anim = keyframes`
    from {
      border-radius: 24% 76% 35% 65% / 27% 36% 65% 73%;
      transform: translate(-200px, 0px) rotate(0deg);
@@ -25,26 +24,23 @@ const anim2 = keyframes`
  `
 
 export const BlobContainer = styled.div`
-
   width: 200px;
   height: 200px;
   bottom: 0;
   right: 0;
   display: flex;
-  
-  
-  
+
   background: ${(props) => props.theme.yellow};
-  
+
   position: absolute;
-  
-  animation: ${anim} 15s infinite alternate;
+
+  animation: ${anim} 10s infinite alternate;
 `
 
 export const BlobContainer2 = styled(BlobContainer)`
-  width:120px;
-  height:120px;
+  width: 120px;
+  height: 120px;
   background: ${(props) => props.theme['gray-900']};
-  animation: ${anim2} 15s infinite alternate;
+  animation: ${anim2} 10s infinite alternate;
   mix-blend-mode: color-dodge;
 `

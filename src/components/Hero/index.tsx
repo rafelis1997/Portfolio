@@ -36,8 +36,8 @@ export function Hero() {
           <ImageContainer>
             <ImageDisplay
               initial={{ scaleY: 0, scaleX: 0, originY: 1, x: 0 }}
-              animate={{ scaleY: 1, scaleX: 1, transition: {delay: .4}}}
-              whileHover={{ x: -10, transition: { delay: 0 }}}
+              animate={{ scaleY: 1, scaleX: 1, transition: { delay: 0.4 } }}
+              whileHover={{ x: -10, transition: { delay: 0 } }}
               transition={{
                 type: 'spring',
                 stiffness: 100,

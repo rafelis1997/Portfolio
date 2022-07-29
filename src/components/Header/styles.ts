@@ -36,14 +36,25 @@ export const HeaderInner = styled.div`
       transform: scale(1.1);
     }
   }
+`
+interface NavProps {
+  active: boolean
+}
 
+export const NavMenu = styled.div<NavProps>`
   nav {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     align-items: center;
 
-    div {
+    svg {
+      display: none;
+    }
+
+    .socialMedia {
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -53,5 +64,64 @@ export const HeaderInner = styled.div`
 
       border-left: 1px solid ${(props) => props.theme['text-gray']};
     }
+
+    @media (max-width: 768px) {
+      width: 100%;
+      flex-flow: column nowrap;
+      justify-content: flex-start;
+      align-self: flex-start;
+
+      transition: all 0.2s ease-in-out;
+
+      .menuItems {
+        display: ${(props) => (props.active ? 'flex' : 'none')};
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-self: center;
+        text-align: center;
+        gap: 1rem;
+
+        .socialMedia {
+          border: none;
+          padding: 0;
+        }
+      }
+
+      svg {
+        display: block;
+      }
+
+      .sandwichContainer {
+        border: none;
+        display: flex;
+        width: 100%;
+        justify-content: ${(props) => (props.active ? 'flex-end' : 'center')};
+
+        :hover {
+          transform: scale(1);
+        }
+
+        svg:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    top: 0rem;
+    right: 0rem;
+
+    width: ${(props) => props.active && '50vw'};
+    height: ${(props) => props.active && '100vh'};
+
+    padding: 2rem;
+
+    color: ${(props) => props.active && props.theme['gray-900']};
+    background: ${(props) => props.active && props.theme.yellow};
   }
 `

@@ -32,6 +32,10 @@ export const ProjectCard = styled.div<InverseProps>`
     gap: 3rem;
     flex-direction: column-reverse;
   }
+
+  box-shadow: ${(props) =>
+    props.isInverse &&
+    '0px 0.6px 1px -3px rgba(0, 0, 0, 0.034), 0px 1.5px 2.4px -3px rgba(0, 0, 0, 0.048), 0px 2.9px 4.5px -3px rgba(0, 0, 0, 0.06), 0px 5.1px 8px -3px rgba(0, 0, 0, 0.072), 0px 9.6px 15px -3px rgba(0, 0, 0, 0.086), 0px 23px 36px -3px rgba(0, 0, 0, 0.12);'};
 `
 
 export const ProjectCardContent = styled.div`
@@ -161,7 +165,6 @@ export const CommentCardInner = styled.div`
   align-items: center;
   margin: 0 auto;
   padding: 3rem 0;
-  
 
   border-top: 3px solid ${(props) => props.theme['gray-900']};
   border-bottom: 3px solid ${(props) => props.theme['gray-900']};
@@ -179,7 +182,6 @@ export const CommentCardContent = styled.div<InverseProps>`
   align-items: center;
   gap: 1rem;
   max-width: 580px;
-  
 
   svg {
     top: -50px;

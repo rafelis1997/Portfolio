@@ -22,7 +22,7 @@ export const AboutMeInner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20rem;
+  gap: 15rem;
 
   @media (max-width: 1024px) {
     flex-direction: column-reverse;
@@ -43,6 +43,13 @@ export const AboutMeDescription = styled.div`
   background: ${(props) => props.theme['gray-900']};
   padding: 4rem;
   border-radius: 24px;
+
+  box-shadow: 0px 1.2px 1px -3px rgba(0, 0, 0, 0.034),
+    0px 2.9px 2.4px -3px rgba(0, 0, 0, 0.048),
+    0px 5.5px 4.5px -3px rgba(0, 0, 0, 0.06),
+    0px 9.8px 8px -3px rgba(0, 0, 0, 0.072),
+    0px 18.4px 15px -3px rgba(0, 0, 0, 0.086),
+    0px 44px 36px -3px rgba(0, 0, 0, 0.12);
 `
 
 export const AboutMeModelContainer = styled.div`
@@ -51,8 +58,7 @@ export const AboutMeModelContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  padding: 1rem 0;
+
   overflow: visible;
 
   position: relative;
@@ -63,7 +69,7 @@ export const AboutMeModelContainer = styled.div`
   canvas {
     overflow: visible;
     width: 400px;
-    height: 400px;
+    height: 600px;
     z-index: 11;
   }
 `

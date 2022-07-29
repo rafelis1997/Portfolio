@@ -119,7 +119,7 @@ export const HeroButtonContainer = styled.div`
     font-weight: 900;
     border-radius: 32px;
     cursor: pointer;
-    box-shadow: -16px 16px 4px rgba(52, 52, 52, 0.25);
+    box-shadow: 0px 16px 4px rgba(10, 10, 10, 0.25);
 
     transition: background, transform 0.2s ease-in-out;
 

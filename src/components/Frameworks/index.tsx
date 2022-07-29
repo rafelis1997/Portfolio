@@ -1,5 +1,15 @@
 import { AnimatePresence } from 'framer-motion'
-import { Atom, Cube, FigmaLogo, FileCss, Graph, Leaf } from 'phosphor-react'
+import {
+  Atom,
+  Cube,
+  FigmaLogo,
+  FileCss,
+  Graph,
+  HardDrives,
+  Leaf,
+  Monitor,
+  Sunglasses,
+} from 'phosphor-react'
 import { useState } from 'react'
 import SassIcon from '../../assets/sassIcon.svg'
 import ZapparIcon from '../../assets/zapparIcon.png'
@@ -31,19 +41,22 @@ export function Frameworks() {
             isActive={toggleActive === 1}
             onClick={() => handleLabelClick(1)}
           >
-            FRONT-END
+            <Monitor size={48} />
+            <span>FRONT-END</span>
           </Label>
           <Label
             isActive={toggleActive === 2}
             onClick={() => handleLabelClick(2)}
           >
-            BACK-END
+            <HardDrives size={48} />
+            <span>BACK-END</span>
           </Label>
           <Label
             isActive={toggleActive === 3}
             onClick={() => handleLabelClick(3)}
           >
-            AUGMENTED-REALITY
+            <Sunglasses size={48} />
+            <span>AUGMENTED-REALITY</span>
           </Label>
         </LabelsContainer>
 

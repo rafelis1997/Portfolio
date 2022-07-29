@@ -69,6 +69,20 @@ export const Label = styled.a<LabelsProps>`
     background: ${(props) =>
       props.isActive ? props.theme['gray-700'] : props.theme['gray-400']};
   }
+
+  svg {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    span {
+      display: none;
+    }
+
+    svg {
+      display: block;
+    }
+  }
 `
 
 export const FrameworksIconsContainer = styled(motion.div)`
