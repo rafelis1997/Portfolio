@@ -44,7 +44,7 @@ export const portfolioData = {
         secondaryButton: { title: 'See the video', goTo: '#' },
         comment: {
           text: 'Always made awesome jobs for my companies, this time he was implemented AR feature for my masks model, they are brillient idea and we will always want to continue working with him. - Woodtech',
-          commentImgUrl: 'pptechImg.png',
+          commentImgUrl: 'woodtechLogo.png',
         },
       },
       {
