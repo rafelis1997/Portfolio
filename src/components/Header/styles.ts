@@ -50,8 +50,12 @@ export const NavMenu = styled.div<NavProps>`
     gap: 1rem;
     align-items: center;
 
-    svg {
-      display: none;
+    .menuItems {
+      display: flex;
+      justify-content: flex-start;
+      align-self: center;
+      text-align: center;
+      gap: 1rem;
     }
 
     .socialMedia {
@@ -63,6 +67,9 @@ export const NavMenu = styled.div<NavProps>`
       padding-left: 0.5rem;
 
       border-left: 1px solid ${(props) => props.theme['text-gray']};
+    }
+    .sandwichContainer {
+      display: none;
     }
 
     @media (max-width: 768px) {
