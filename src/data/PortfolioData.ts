@@ -43,7 +43,7 @@ export const portfolioData = {
         },
         secondaryButton: { title: 'See the video', goTo: '#' },
         comment: {
-          text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s - kajshdkjas, lasjhdkla",
+          text: "Always made awesome jobs for my companies, this time he was implemented AR feature for my masks model, they are brillient idea and we will always want to continue working with him. - Woodtech",
           commentImgUrl: 'pptechImg.png',
         },
       },

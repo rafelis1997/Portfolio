@@ -12,4 +12,5 @@ export const HalfEllipseContainer = styled(motion.div)`
 
   width: 18.44rem;
   height: 18.44rem;
+  border-color: ${(props) => props.theme['gray-200']};
 `
