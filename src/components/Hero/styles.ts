@@ -71,6 +71,10 @@ export const ImageContainer = styled(motion.div)`
   height: 414px;
   top: 0;
   left: 0;
+  @media (max-width: 496px) {
+    max-width: 100%;
+    right: 20%;
+  }
 `
 
 export const ImageDisplay = styled(motion.div)`
@@ -90,11 +94,6 @@ export const ImageDisplay = styled(motion.div)`
 
   img {
     width: 100%;
-  }
-
-  @media (max-width: 496px) {
-    max-width: 18.75rem;
-    right: 20%;
   }
 `
 

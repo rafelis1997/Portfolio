@@ -12,6 +12,11 @@ export const EllipseOneContainer = styled(motion.div)`
 
   width: 47px;
   height: 47px;
+
+  @media (max-width: 496px) {
+    bottom: 200px;
+    right: 20px;
+  }
 `
 
 export const EllipseTwoContainer = styled(motion.div)`
@@ -25,4 +30,9 @@ export const EllipseTwoContainer = styled(motion.div)`
 
   width: 140px;
   height: 140px;
+
+  @media (max-width: 496px) {
+    bottom: 30px;
+    right: 20px;
+  }
 `
