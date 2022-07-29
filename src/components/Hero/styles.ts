@@ -73,6 +73,7 @@ export const ImageContainer = styled(motion.div)`
   left: 0;
   @media (max-width: 496px) {
     max-width: 100%;
+    height: 100%;
     right: 20%;
   }
 `
