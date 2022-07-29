@@ -78,7 +78,7 @@ export const ImageDisplay = styled(motion.div)`
   z-index: 2;
   top: 0;
   right: 0;
-  width: 23.75rem;
+  max-width: 23.75rem;
   position: absolute;
   border-radius: 32px;
   display: flex;
@@ -90,6 +90,11 @@ export const ImageDisplay = styled(motion.div)`
 
   img {
     width: 100%;
+  }
+
+  @media (max-width: 496px) {
+    max-width: 18.75rem;
+    right: 20%;
   }
 `
 
@@ -103,6 +108,13 @@ export const ImageBackground = styled(motion.div)`
   height: 307px;
 
   border-radius: 32px;
+
+  @media (max-width: 496px) {
+    max-width: 18.75rem;
+    height: 19rem;
+    left: 10%;
+    bottom: 0;
+  }
 `
 
 export const HeroButtonContainer = styled.div`

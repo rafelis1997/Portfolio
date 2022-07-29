@@ -32,6 +32,10 @@ export const AboutMeInner = styled.div`
   @media (max-width: 600px) {
     padding: 0 3rem;
   }
+
+  @media (max-width: 496px) {
+    padding: 0 0;
+  }
 `
 
 export const AboutMeDescription = styled.div`
@@ -42,7 +46,11 @@ export const AboutMeDescription = styled.div`
   line-height: 28px;
   background: ${(props) => props.theme['gray-900']};
   padding: 4rem;
+
   border-radius: 24px;
+  @media (max-width: 496px) {
+    border-radius: 0;
+  }
 
   box-shadow: 0px 1.2px 1px -3px rgba(0, 0, 0, 0.034),
     0px 2.9px 2.4px -3px rgba(0, 0, 0, 0.048),

@@ -9,6 +9,10 @@ export const PortfolioCardContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 2rem 3rem;
+
+  @media (max-width: 496px) {
+    padding: 2rem 0;
+  }
 `
 
 export const ProjectCard = styled.div<InverseProps>`
@@ -22,6 +26,10 @@ export const ProjectCard = styled.div<InverseProps>`
   padding: 4rem 2rem;
   padding-bottom: 6rem;
   border-radius: 24px;
+
+  @media (max-width: 496px) {
+    border-radius: 0;
+  }
 
   background: ${(props) =>
     props.isInverse ? props.theme['gray-900'] : props.theme['gray-200']};
