@@ -8,7 +8,7 @@ export const PortfolioCardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
 `
 
 export const ProjectCard = styled.div<InverseProps>`
@@ -23,7 +23,8 @@ export const ProjectCard = styled.div<InverseProps>`
   padding-bottom: 6rem;
   border-radius: 24px;
 
-  background: ${(props) => (props.isInverse ? props.theme['gray-900'] : '')};
+  background: ${(props) =>
+    props.isInverse ? props.theme['gray-900'] : props.theme['gray-200']};
 
   color: ${(props) =>
     !props.isInverse ? props.theme['gray-900'] : props.theme['text-gray']};
@@ -149,7 +150,8 @@ export const PortfolioCardImageBackground = styled.div<InverseProps>`
 `
 
 export const CommentCard = styled.div<InverseProps>`
-  padding: 8rem 2rem;
+  padding: 2rem 2rem;
+  padding-top: 6rem;
 
   background: ${(props) => (!props.isInverse ? props.theme['gray-900'] : '')};
 
