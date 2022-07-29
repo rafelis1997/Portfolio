@@ -31,6 +31,7 @@ export const FooterContainer = styled.section`
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
 
     a:visited {
       text-decoration: none;
