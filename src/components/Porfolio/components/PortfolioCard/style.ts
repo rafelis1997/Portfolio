@@ -32,7 +32,7 @@ export const ProjectCard = styled.div<InverseProps>`
   }
 
   background: ${(props) =>
-    props.isInverse ? props.theme['gray-900'] : props.theme['gray-200']};
+    props.isInverse ? props.theme['gray-900'] : props.theme.yellow};
 
   color: ${(props) =>
     !props.isInverse ? props.theme['gray-900'] : props.theme['text-gray']};
@@ -110,8 +110,9 @@ export const ButtonContainer = styled.div<InverseProps>`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media (max-width: 1024px) {
     gap: 3rem;
+    flex-direction: column;
   }
 `
 interface CommentImgProps {
