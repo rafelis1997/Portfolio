@@ -13,7 +13,7 @@ import {
 
 export function Hero() {
   return (
-    <HeroContainer>
+    <HeroContainer id="home">
       <Ellipses />
       <HeroInner
         initial={{ opacity: 0 }}

@@ -31,9 +31,16 @@ export const HeaderInner = styled.div`
   a {
     font-weight: bold;
     cursor: pointer;
+    text-decoration: none;
+    color: ${(props) => props.theme['text-gray']};
 
     &:hover {
       transform: scale(1.1);
+    }
+
+    a:visited {
+      text-decoration: none;
+      color: ${(props) => props.theme['text-gray']};
     }
   }
 `

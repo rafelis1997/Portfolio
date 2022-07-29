@@ -1,5 +1,13 @@
-import { GithubLogo, LinkedinLogo, TwitterLogo, List, X } from 'phosphor-react'
+import {
+  GithubLogo,
+  LinkedinLogo,
+  TwitterLogo,
+  List,
+  X,
+  SuitcaseSimple,
+} from 'phosphor-react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { HeaderContainer, HeaderInner, NavMenu } from './styles'
 
 export function Header() {
@@ -7,6 +15,14 @@ export function Header() {
 
   function handleNavMenuActive() {
     setActive(!active)
+  }
+
+  function handleNavigation(sectionName: string) {
+    const section = document.querySelector(`#${sectionName}`)
+    section?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    })
   }
 
   return (
@@ -21,20 +37,38 @@ export function Header() {
             </a>
 
             <div className="menuItems">
-              <a>Home</a>
-              <a>About Me</a>
-              <a>Portfolio</a>
-              <a>Contact</a>
+              <a onClick={() => handleNavigation('home')}>Home</a>
+              <a onClick={() => handleNavigation('about')}>About Me</a>
+              <a onClick={() => handleNavigation('projects')}>Portfolio</a>
+              <a
+                href="https://www.fiverr.com/rafelis"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Contact
+              </a>
               <div className="socialMedia">
-                <a>
+                <a
+                  href="https://github.com/rafelis1997/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <GithubLogo size={32} />
                 </a>
 
-                <a>
-                  <TwitterLogo size={32} />
+                <a
+                  href="https://www.fiverr.com/rafelis"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <SuitcaseSimple size={32} />
                 </a>
 
-                <a>
+                <a
+                  href="https://www.linkedin.com/in/rafael-heros-almeida/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <LinkedinLogo size={32} />
                 </a>
               </div>

@@ -4,7 +4,7 @@ import { PortfolioContainer, PortfolioInner, PortfolioContent } from './styles'
 
 export function Portfolio() {
   return (
-    <PortfolioContainer>
+    <PortfolioContainer id="projects">
       <PortfolioInner>
         <h1>Projects</h1>
         <PortfolioContent>
