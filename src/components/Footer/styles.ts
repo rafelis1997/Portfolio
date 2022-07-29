@@ -33,6 +33,11 @@ export const FooterContainer = styled.section`
     gap: 0.5rem;
     text-decoration: none;
 
+    a {
+      text-decoration: none;
+      color: ${(props) => props.theme['text-gray']};
+    }
+
     a:visited {
       text-decoration: none;
       color: ${(props) => props.theme['text-gray']};
