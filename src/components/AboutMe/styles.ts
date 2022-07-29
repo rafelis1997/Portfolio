@@ -22,26 +22,24 @@ export const AboutMeInner = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15rem;
+  gap: 10rem;
   padding: 0 4rem;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1077px) {
     flex-direction: column-reverse;
-    gap: 3rem;
+    gap: 1rem;
   }
 
   @media (max-width: 600px) {
     padding: 0 3rem;
-  }
-
-  @media (max-width: 496px) {
-    padding: 0 0;
+    gap: 1rem;
   }
 `
 
 export const AboutMeDescription = styled.div`
   display: flex;
   max-width: 560px;
+  flex: 1;
   flex-direction: column;
   gap: 2rem;
   line-height: 28px;
