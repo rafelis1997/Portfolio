@@ -95,6 +95,13 @@ export const NavMenu = styled.div<NavProps>`
         text-align: center;
         gap: 1rem;
 
+        color: ${(props) => props.theme['gray-900']};
+
+        a:visited {
+          text-decoration: none;
+          color: ${(props) => props.theme['gray-900']};
+        }
+
         .socialMedia {
           border: none;
           padding: 0;
