@@ -6,7 +6,7 @@ export function Portfolio() {
   return (
     <PortfolioContainer>
       <PortfolioInner>
-        <h1>Portfolio</h1>
+        <h1>Projects</h1>
         <PortfolioContent>
           {portfolioData.content.projects.map((project) => (
             <PortfolioCard data={project} key={project.id} />
