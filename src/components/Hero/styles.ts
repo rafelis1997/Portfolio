@@ -109,7 +109,7 @@ export const ImageBackground = styled(motion.div)`
   border-radius: 32px;
 
   @media (max-width: 496px) {
-    max-width: 18.75rem;
+    max-width: 16.75rem;
     height: 19rem;
     left: 1rem;
     bottom: 0;
