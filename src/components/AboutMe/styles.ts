@@ -80,4 +80,8 @@ export const AboutMeModelContainer = styled.div`
     height: 600px;
     z-index: 11;
   }
+
+  @media (max-width: 500px) {
+    min-width: 300px;
+  }
 `
