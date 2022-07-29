@@ -76,7 +76,8 @@ export const AboutMeModelContainer = styled.div`
 
   canvas {
     overflow: visible;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     height: 600px;
     z-index: 11;
   }
