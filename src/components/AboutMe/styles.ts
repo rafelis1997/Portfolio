@@ -23,6 +23,7 @@ export const AboutMeInner = styled.div`
   justify-content: center;
   align-items: center;
   gap: 15rem;
+  padding: 0 4rem;
 
   @media (max-width: 1024px) {
     flex-direction: column-reverse;
