@@ -37,13 +37,35 @@ export function Header() {
             </a>
 
             <div className="menuItems">
-              <a onClick={() => handleNavigation('home')}>Home</a>
-              <a onClick={() => handleNavigation('about')}>About Me</a>
-              <a onClick={() => handleNavigation('projects')}>Portfolio</a>
+              <a
+                onClick={() => {
+                  handleNavigation('home')
+                  handleNavMenuActive()
+                }}
+              >
+                Home
+              </a>
+              <a
+                onClick={() => {
+                  handleNavigation('about')
+                  handleNavMenuActive()
+                }}
+              >
+                About Me
+              </a>
+              <a
+                onClick={() => {
+                  handleNavigation('projects')
+                  handleNavMenuActive()
+                }}
+              >
+                Portfolio
+              </a>
               <a
                 href="https://www.fiverr.com/rafelis"
                 target="_blank"
                 rel="noreferrer"
+                onClick={() => handleNavMenuActive()}
               >
                 Contact
               </a>
@@ -52,6 +74,7 @@ export function Header() {
                   href="https://github.com/rafelis1997/"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() => handleNavMenuActive()}
                 >
                   <GithubLogo size={32} />
                 </a>
@@ -60,6 +83,7 @@ export function Header() {
                   href="https://www.fiverr.com/rafelis"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() => handleNavMenuActive()}
                 >
                   <SuitcaseSimple size={32} />
                 </a>
@@ -68,6 +92,7 @@ export function Header() {
                   href="https://www.linkedin.com/in/rafael-heros-almeida/"
                   target="_blank"
                   rel="noreferrer"
+                  onClick={() => handleNavMenuActive()}
                 >
                   <LinkedinLogo size={32} />
                 </a>

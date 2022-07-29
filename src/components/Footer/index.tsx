@@ -1,4 +1,9 @@
-import { GithubLogo, TwitterLogo, LinkedinLogo } from 'phosphor-react'
+import {
+  GithubLogo,
+  TwitterLogo,
+  LinkedinLogo,
+  SuitcaseSimple,
+} from 'phosphor-react'
 import { FooterContainer } from './styles'
 
 export function Footer() {
@@ -8,15 +13,27 @@ export function Footer() {
       <div className="footerItemsContainer">
         <span>Email: rafaelheros80@gmail.com</span>
         <div className="socialMediaFooter">
-          <a>
+          <a
+            href="https://github.com/rafelis1997/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <GithubLogo size={32} />
           </a>
 
-          <a>
-            <TwitterLogo size={32} />
+          <a
+            href="https://www.fiverr.com/rafelis"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <SuitcaseSimple size={32} />
           </a>
 
-          <a>
+          <a
+            href="https://www.linkedin.com/in/rafael-heros-almeida/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LinkedinLogo size={32} />
           </a>
         </div>
