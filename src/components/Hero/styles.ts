@@ -112,7 +112,7 @@ export const ImageBackground = styled(motion.div)`
     max-width: 15.75rem;
     height: 10rem;
     left: 0;
-    bottom: -20px;
+    bottom: 40px;
   }
 `
 
