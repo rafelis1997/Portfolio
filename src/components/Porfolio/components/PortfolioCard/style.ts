@@ -8,6 +8,7 @@ export const PortfolioCardContainer = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding: 0 3rem;
 `
 
 export const ProjectCard = styled.div<InverseProps>`
@@ -20,6 +21,7 @@ export const ProjectCard = styled.div<InverseProps>`
 
   padding: 4rem 2rem;
   padding-bottom: 6rem;
+  border-radius: 24px;
 
   background: ${(props) => (props.isInverse ? props.theme['gray-900'] : '')};
 
@@ -63,10 +65,16 @@ export const ButtonContainer = styled.div<InverseProps>`
     color: ${(props) =>
       props.isInverse ? props.theme.yellow : props.theme['gray-900']};
 
+    box-shadow: 0px 8px 4px rgba(10, 10, 10, 0.25);
     transition: all 0.2s ease-in-out;
 
     &:hover {
       text-decoration: none;
+      border-color: ${(props) =>
+        props.isInverse
+          ? props.theme['yellow-hover']
+          : props.theme['gray-700']};
+      transform: scale(0.95);
     }
   }
 
@@ -79,6 +87,10 @@ export const ButtonContainer = styled.div<InverseProps>`
 
     &:hover {
       background: ${(props) =>
+        props.isInverse
+          ? props.theme['yellow-hover']
+          : props.theme['gray-700']};
+      border-color: ${(props) =>
         props.isInverse
           ? props.theme['yellow-hover']
           : props.theme['gray-700']};
@@ -149,6 +161,7 @@ export const CommentCardInner = styled.div`
   align-items: center;
   margin: 0 auto;
   padding: 3rem 0;
+  
 
   border-top: 3px solid ${(props) => props.theme['gray-900']};
   border-bottom: 3px solid ${(props) => props.theme['gray-900']};
@@ -166,6 +179,7 @@ export const CommentCardContent = styled.div<InverseProps>`
   align-items: center;
   gap: 1rem;
   max-width: 580px;
+  
 
   svg {
     top: -50px;

@@ -55,11 +55,13 @@ export const DescriptionContainer = styled.div`
   span {
     max-width: 400px;
     width: fit-content;
+    text-shadow: -16px 16px 4px rgba(52, 52, 52, 0.25);
   }
 
   h1 {
     position: relative;
     font-size: 2.875rem;
+    text-shadow: -16px 16px 4px rgba(52, 52, 52, 0.25);
   }
 `
 
@@ -117,6 +119,7 @@ export const HeroButtonContainer = styled.div`
     font-weight: 900;
     border-radius: 32px;
     cursor: pointer;
+    box-shadow: -16px 16px 4px rgba(52, 52, 52, 0.25);
 
     transition: background, transform 0.2s ease-in-out;
 
