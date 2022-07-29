@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 export const FooterContainer = styled.section`
   width: 100%;
-  padding: 4rem 2rem;
-  padding-bottom: 0.5rem;
+  padding: 2rem;
+  padding-bottom: 1rem;
 
   display: flex;
   justify-content: center;
