@@ -83,5 +83,6 @@ export const AboutMeModelContainer = styled.div`
 
   @media (max-width: 500px) {
     min-width: 300px;
+    width: 100%;
   }
 `
