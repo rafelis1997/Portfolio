@@ -31,6 +31,11 @@ export const FooterContainer = styled.section`
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+
+    a:visited {
+      text-decoration: none;
+      color: ${(props) => props.theme['text-gray']};
+    }
   }
 
   span:last-child {
