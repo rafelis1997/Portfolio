@@ -43,7 +43,7 @@ export const portfolioData = {
         },
         secondaryButton: { title: 'See the video', goTo: '#' },
         comment: {
-          text: 'Always made awesome jobs for my companies, this time he was implemented AR feature for my masks model, they are brillient idea and we will always want to continue working with him. - Woodtech',
+          text: 'Always made awesome jobs for my companies, this time he was implemented AR feature for my masks model, they are brilliant idea and we will always want to continue working with him. - Woodtech',
           commentImgUrl: 'woodtechLogo.png',
         },
       },
@@ -58,8 +58,8 @@ export const portfolioData = {
           goTo: 'https://arjs-react-test.vercel.app',
         },
         secondaryButton: {
-          title: 'Go to Github',
-          goTo: 'https://github.com/rafelis1997/arjs-react-experimental-app/tree/master',
+          title: 'Open Marker',
+          goTo: 'https://user-images.githubusercontent.com/60658855/173499194-73520eb9-3e30-4163-bb2c-a35eebf1b69e.png',
         },
       },
     ],
