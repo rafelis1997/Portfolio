@@ -35,10 +35,13 @@ export function ContactMe() {
       body: JSON.stringify({
         name: 'FormSubmit',
         message: "I'm from Devro LABS",
-      }),
+        // eslint-disable-next-line prettier/prettier
+      })
     })
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error))
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      // eslint-disable-next-line prettier/prettier
+      .catch((error) => console.log(error));
 
     // const headers = {
     //   'Content-Type': 'text/plain',
