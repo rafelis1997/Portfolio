@@ -62,7 +62,7 @@ export function Header() {
                 Portfolio
               </a>
               <NavLink
-                to="/contact-me"
+                to="#/contact-me"
                 rel="noreferrer"
                 onClick={() => handleNavMenuActive()}
               >
