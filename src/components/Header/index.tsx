@@ -7,7 +7,7 @@ import {
   SuitcaseSimple,
 } from 'phosphor-react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { HeaderContainer, HeaderInner, NavMenu } from './styles'
 
 export function Header() {
@@ -37,14 +37,14 @@ export function Header() {
             </a>
 
             <div className="menuItems">
-              <a
+              <NavLink
+                to="/"
                 onClick={() => {
-                  handleNavigation('home')
                   handleNavMenuActive()
                 }}
               >
                 Home
-              </a>
+              </NavLink>
               <a
                 onClick={() => {
                   handleNavigation('about')
@@ -61,14 +61,13 @@ export function Header() {
               >
                 Portfolio
               </a>
-              <a
-                href="https://www.fiverr.com/rafelis"
-                target="_blank"
+              <NavLink
+                to="/contact-me"
                 rel="noreferrer"
                 onClick={() => handleNavMenuActive()}
               >
                 Contact
-              </a>
+              </NavLink>
               <div className="socialMedia">
                 <a
                   href="https://github.com/rafelis1997/"
