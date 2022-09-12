@@ -21,14 +21,59 @@ export const portfolioData = {
   content: {
     projects: [
       {
-        id: 1,
+        id: 6,
         description:
-          'I’ve made a work for Time Jumble game to display one of them main character on the game webpage. It was a marker tracking AR on the “What is Time Jumble” section.',
-        imgUrl: 'timeJumble.png',
+          'Ig.News is an ReactJS news website with subscription integrated with Stripe, using: Typescript, SCSS, Next.js, FaunaDB and Stripe API',
+        imgUrl: 'ignews.gif',
         isInverse: true,
         primaryButton: {
           title: 'Go to Website',
-          goTo: 'https://www.timejumble.com/#about',
+          goTo: 'https://ignews-iota-virid.vercel.app',
+        },
+        secondaryButton: {
+          title: 'Go to Github',
+          goTo: 'https://github.com/rafelis1997/desafio-03-ignite-blog',
+        },
+      },
+      {
+        id: 6,
+        description:
+          'DT Money is an ReactJS financial control app for React base knowledge, using: Typescript, SCSS, Next.js, Prisma, React Hook Form and Axios',
+        imgUrl: 'dtmoney.gif',
+        isInverse: true,
+        primaryButton: {
+          title: 'Go to Website',
+          goTo: 'https://dtmoney-eight-coral.vercel.app',
+        },
+        secondaryButton: {
+          title: 'Go to Github',
+          goTo: 'https://github.com/rafelis1997/dtmoney',
+        },
+      },
+      {
+        id: 7,
+        description:
+          'Github blog is an ReactJS blog using github API as CMS for posts, using: Typescript, React Markdown, Framer-motion, styled-components, Vite, FaunaDB, React Hook Form and React Query',
+        imgUrl: 'github-blog.gif',
+        isInverse: false,
+        primaryButton: {
+          title: 'Go to Website',
+          goTo: 'https://github-blog-project.vercel.app',
+        },
+        secondaryButton: {
+          title: 'Go to Github',
+          goTo: 'https://github.com/rafelis1997/reactjs-github-blog-challenge',
+        },
+      },
+      {
+        id: 4,
+        description:
+          'Upfi is a ReactJS photo gallery case study do learn API consumption and file upload, using: Typescript, Chakra UI, styled-components, Next.js, FaunaDB, React Hook Form and React Query',
+        imgUrl: 'upfi.gif',
+        isInverse: true,
+        primaryButton: {
+          title: 'Go to Github',
+          goTo: 'https://github.com/rafelis1997/Upfi',
         },
       },
       {
@@ -48,18 +93,14 @@ export const portfolioData = {
         },
       },
       {
-        id: 3,
+        id: 1,
         description:
-          'AR Experience is my demo Web App to showcase my work as an webAR developer, it’s in continuos development and will show what is possible with webAR today',
-        imgUrl: 'arDemo.png',
+          'I’ve made a work for Time Jumble game to display one of them main character on the game webpage. It was a marker tracking AR on the “What is Time Jumble” section.',
+        imgUrl: 'timeJumble.png',
         isInverse: true,
         primaryButton: {
           title: 'Go to Website',
-          goTo: 'https://arjs-react-test.vercel.app',
-        },
-        secondaryButton: {
-          title: 'Open Marker',
-          goTo: 'https://user-images.githubusercontent.com/60658855/173499194-73520eb9-3e30-4163-bb2c-a35eebf1b69e.png',
+          goTo: 'https://www.timejumble.com/#about',
         },
       },
     ],
