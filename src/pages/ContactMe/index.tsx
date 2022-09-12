@@ -32,6 +32,8 @@ export function ContactMe() {
             value="https://rafael-almeida.vercel.app/contact-me/email-sent"
           ></input>
 
+          <input type="hidden" name="_template" value="box" />
+
           <button type="submit">Enviar</button>
         </ContactForm>
       </ContactMeContent>
