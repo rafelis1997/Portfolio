@@ -36,6 +36,21 @@ export const portfolioData = {
         },
       },
       {
+        id: 7,
+        description:
+          'Github blog is an ReactJS blog using github API as CMS for posts, using: Typescript, React Markdown, Framer-motion, styled-components, Vite, FaunaDB, React Hook Form and React Query',
+        imgUrl: 'github-blog.gif',
+        isInverse: false,
+        primaryButton: {
+          title: 'Go to Website',
+          goTo: 'https://github-blog-project.vercel.app',
+        },
+        secondaryButton: {
+          title: 'Go to Github',
+          goTo: 'https://github.com/rafelis1997/reactjs-github-blog-challenge',
+        },
+      },
+      {
         id: 4,
         description:
           'Upfi is a ReactJS photo gallery case study do learn API consumption and file upload, using: Typescript, Chakra UI, styled-components, Next.js, FaunaDB, React Hook Form and React Query',
@@ -55,21 +70,6 @@ export const portfolioData = {
         primaryButton: {
           title: 'Go to Github',
           goTo: 'https://github.com/rafelis1997/03-Coffee-Delivery',
-        },
-      },
-      {
-        id: 7,
-        description:
-          'Github blog is an ReactJS blog using github API as CMS for posts, using: Typescript, React Markdown, Framer-motion, styled-components, Vite, FaunaDB, React Hook Form and React Query',
-        imgUrl: 'github-blog.gif',
-        isInverse: false,
-        primaryButton: {
-          title: 'Go to Website',
-          goTo: 'https://github-blog-project.vercel.app',
-        },
-        secondaryButton: {
-          title: 'Go to Github',
-          goTo: 'https://github.com/rafelis1997/reactjs-github-blog-challenge',
         },
       },
       {
