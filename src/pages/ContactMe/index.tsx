@@ -29,7 +29,7 @@ export function ContactMe() {
           <input
             type="hidden"
             name="_next"
-            value="https://rafael-almeida.vercel.app/contact-me/email-sent"
+            value="http://rafael-almeida.vercel.app/contact-me/email-sent"
           ></input>
 
           <input type="hidden" name="_template" value="box" />
