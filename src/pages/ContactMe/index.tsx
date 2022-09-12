@@ -37,9 +37,9 @@ export function ContactMe() {
         message: "I'm from Devro LABS",
       }),
     })
-    //   .then((response) => response.json())
-    //   .then((data) => console.log(data))
-    //   .catch((error) => console.log(error))
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.log(error))
 
     // const headers = {
     //   'Content-Type': 'text/plain',
