@@ -20,11 +20,17 @@ export function ContactMe() {
           <h1>Contact Form</h1>
 
           <label htmlFor="fname">Name/Company:</label>
-          <input type="text" id="fname" name="fname" autoFocus required />
+          <input
+            type="text"
+            id="fname"
+            name="Name/Company"
+            autoFocus
+            required
+          />
           <label htmlFor="lname">Email:</label>
-          <input type="email" id="lname" name="lname" required />
+          <input type="email" id="lname" name="Email" required />
           <label htmlFor="tname">Content:</label>
-          <textarea id="tname" name="tname" rows={4} wrap="soft" required />
+          <textarea id="tname" name="Content" rows={4} wrap="soft" required />
 
           <input
             type="hidden"
