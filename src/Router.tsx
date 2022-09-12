@@ -10,7 +10,7 @@ export function Router() {
       <Route path="/" element={<DefaultLayout />}>
         <Route path="/" element={<Home />} />
         <Route path="/contact-me" element={<ContactMe />} />
-        <Route path="contact-me/email-sent" element={<EmailSent />} />
+        <Route path="/contact-me/email-sent" element={<EmailSent />} />
       </Route>
     </Routes>
   )
