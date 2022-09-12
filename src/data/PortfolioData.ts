@@ -51,17 +51,6 @@ export const portfolioData = {
         },
       },
       {
-        id: 4,
-        description:
-          'Upfi is a ReactJS photo gallery case study do learn API consumption and file upload, using: Typescript, Chakra UI, styled-components, Next.js, FaunaDB, React Hook Form and React Query',
-        imgUrl: 'upfi.gif',
-        isInverse: true,
-        primaryButton: {
-          title: 'Go to Github',
-          goTo: 'https://github.com/rafelis1997/Upfi',
-        },
-      },
-      {
         id: 8,
         description:
           'Coffee Delivery is an ReactJS e-commerce to learn ReactJS Context API and Hooks, using: Typescript, JSON Server, Vite, Styled-components, React Hook Form and Axios',
