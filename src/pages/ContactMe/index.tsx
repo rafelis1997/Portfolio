@@ -37,8 +37,7 @@ export function ContactMe() {
         message: "I'm from Devro LABS",
       }),
     })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((response) => console.log(response))
       .catch((error) => console.log(error))
 
     // const headers = {
