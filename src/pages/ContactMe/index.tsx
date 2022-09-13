@@ -41,7 +41,7 @@ export function ContactMe() {
           <label htmlFor="lname">Email:</label>
           <input required id="lname" type="email" name="Email" />
           <label htmlFor="tname">Content:</label>
-          <textarea name="content" id="tname" rows={4} wrap="soft" required />
+          <textarea name="Text" id="tname" rows={4} wrap="soft" required />
 
           <input
             name="_next"
