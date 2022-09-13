@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { EventHandler, FormEvent, useState } from 'react'
 import {
   ContactForm,
   ContactMeContainer,
@@ -9,8 +9,9 @@ import {
 export function ContactMe() {
   const [isSubmiting, setIsSubmiting] = useState(false)
 
-  function handleSubmit(form: HTMLFormElement) {
+  function handleSubmit() {
     setIsSubmiting((state) => !state)
+    const form = document.getElementById('theForm')
     if (form) {
       form.submit()
     }
@@ -51,11 +52,7 @@ export function ContactMe() {
 
           <input name="_template" value="box" type="hidden" />
 
-          <button
-            type="submit"
-            onClick={(e) => handleSubmit(e.target as HTMLFormElement)}
-            disabled={isSubmiting}
-          >
+          <button type="submit" onClick={handleSubmit} disabled={isSubmiting}>
             Enviar
           </button>
         </ContactForm>
