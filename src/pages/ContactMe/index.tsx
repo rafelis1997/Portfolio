@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import {
   ContactForm,
   ContactMeContainer,
@@ -6,6 +7,15 @@ import {
 } from './styles'
 
 export function ContactMe() {
+  const [isSubmiting, setIsSubmiting] = useState(false)
+
+  function handleSubmit(form) {
+    setIsSubmiting((state) => !state)
+    if (form) {
+      form.submit()
+    }
+  }
+
   return (
     <ContactMeContainer>
       <ContactMeContent>
@@ -16,6 +26,7 @@ export function ContactMe() {
         <ContactForm
           action="https://formsubmit.co/rafaelheros80@gmail.com"
           method="POST"
+          id="theForm"
         >
           <h1>Contact Form</h1>
 
@@ -40,7 +51,13 @@ export function ContactMe() {
 
           <input name="_template" value="box" type="hidden" />
 
-          <button type="submit">Enviar</button>
+          <button
+            type="submit"
+            onClick={() => handleSubmit(this.form)}
+            disabled={isSubmiting}
+          >
+            Enviar
+          </button>
         </ContactForm>
       </ContactMeContent>
     </ContactMeContainer>

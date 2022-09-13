@@ -128,10 +128,15 @@ export const ContactForm = styled.form`
     box-shadow: 0px 8px 4px rgba(10, 10, 10, 0.25);
     transition: all 0.2s ease-in-out;
 
-    &:hover {
+    &:not(:disabled):hover {
       text-decoration: none;
       border-color: ${(props) => props.theme['yellow-hover']};
       transform: scale(0.95);
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
     }
   }
 `
