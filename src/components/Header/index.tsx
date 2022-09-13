@@ -7,7 +7,7 @@ import {
   SuitcaseSimple,
 } from 'phosphor-react'
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { HeaderContainer, HeaderInner, NavMenu } from './styles'
 
 export function Header() {

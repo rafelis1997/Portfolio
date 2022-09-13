@@ -5,17 +5,6 @@ import {
   MailImage,
 } from './styles'
 
-import { useForm, SubmitHandler } from 'react-hook-form'
-import axios from 'axios'
-
-interface Inputs {
-  nameCompany: string
-  email: string
-  text: string
-  _next: string
-  _template: string
-}
-
 export function ContactMe() {
   return (
     <ContactMeContainer>
