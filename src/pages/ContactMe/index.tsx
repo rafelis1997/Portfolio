@@ -9,7 +9,7 @@ import {
 export function ContactMe() {
   const [isSubmiting, setIsSubmiting] = useState(false)
 
-  function handleSubmit(form) {
+  function handleSubmit(form: HTMLFormElement) {
     setIsSubmiting((state) => !state)
     if (form) {
       form.submit()
@@ -53,7 +53,7 @@ export function ContactMe() {
 
           <button
             type="submit"
-            onClick={() => handleSubmit(this.form)}
+            onClick={(e) => handleSubmit(e.target as HTMLFormElement)}
             disabled={isSubmiting}
           >
             Enviar
