@@ -13,7 +13,7 @@ export function ContactMe() {
     setIsSubmiting((state) => !state)
     const form = document.getElementById('theForm') as HTMLFormElement
     if (form) {
-      form.event.submit()
+      form.submit()
     }
   }
 
@@ -27,6 +27,7 @@ export function ContactMe() {
         <ContactForm
           action="https://formsubmit.co/rafaelheros80@gmail.com"
           method="POST"
+          id="theForm"
         >
           <h1>Contact Form</h1>
 
@@ -51,12 +52,7 @@ export function ContactMe() {
 
           <input name="_template" value="box" type="hidden" />
 
-          <button
-            type="submit"
-            id="theForm"
-            onClick={handleSubmit}
-            disabled={isSubmiting}
-          >
+          <button type="submit" onClick={handleSubmit} disabled={isSubmiting}>
             Enviar
           </button>
         </ContactForm>
